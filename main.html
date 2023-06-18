@@ -1,16 +1,60 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Carousel</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+      <li data-target="#myCarousel" data-slide-to="4"></li>
+    </ol>
 
+    <!-- Slides -->
+    <div class="carousel-inner">
+      <div class="item active first-slide">
+        <!-- Slide 1 content -->
+        <h3>Slide 1</h3>
+      </div>
+      <div class="item second-slide">
+        <!-- Slide 2 content -->
+        <h3>Slide 2</h3>
+      </div>
+      <div class="item third-slide">
+        <!-- Slide 3 content -->
+        <h3>Slide 3</h3>
+      </div>
+      <div class="item fourth-slide">
+        <!-- Slide 4 content -->
+        <h3>Slide 4</h3>
+      </div>
+      <div class="item fifth-slide">
+        <!-- Slide 5 content -->
+        <h3>Slide 5</h3>
+      </div>
+    </div>
+
+    <!-- Left and right arrows -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </body>
 
 </html>
